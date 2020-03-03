@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Audio Player Widget Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Custom Audio Player Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/style_radio.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+    var weather;
+    function getQueryStr(){   
+        var url = location.href;  
+        var tmp1 = url.split("?")[1];  
+        var tmp2 = tmp1.split("&")[0];  
+        var tmp3 = tmp2.split("=")[1];  
+        var parm = tmp3;
+        return parm;
+    } 
+    weather = getQueryStr();
+
+	
+	switch(weather)
+	{
+		case "Cloudy":
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"Dreamtale",
+				mp3:"./audio/CloudMusic/云/Dreamtale - Intro： The Dawn.mp3"
+			},
+			{
+				title:"Joel Adams",
+				mp3:"./audio/CloudMusic/云/Joel Adams - Please Don't Go.mp3"
+			},
+			{
+				title:"MANYO",
+				mp3:"./audio/CloudMusic/云/MANYO - 殻ノ少女.mp3"
+			},
+			{
+				title:"SIGMA,Paloma Faith",
+				mp3:"./audio/CloudMusic/云/SIGMA,Paloma Faith - Changing [Goldsmyth Edition].mp3"
+			},
+			{
+				title:"Yiruma",
+				mp3:"./audio/CloudMusic/云/Yiruma - River Flows in You.mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+		case "Sunny/Clear":
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"DJ Snake",
+				mp3:"./audio/CloudMusic/晴/DJ Snake,Justin Bieber - Let Me Love You.mp3"
+			},
+			{
+				title:"Lindequist",
+				mp3:"./audio/CloudMusic/晴/Lindequist,Exlau - Phrases.mp3"
+			},
+			{
+				title:"TheFatRat",
+				mp3:"./audio/CloudMusic/晴/TheFatRat - Unity.mp3"
+			},
+			{
+				title:"Vicetone",
+				mp3:"./audio/CloudMusic/晴/Vicetone,Cozi Zuehlsdorff - Nevada.mp3"
+			},
+			{
+				title:"極楽浄土",
+				mp3:"./audio/CloudMusic/晴/極楽浄土.mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+		case "shower rain":
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"Alan Walker",
+				mp3:"./audio/CloudMusic/小雨/Alan Walker - Fade.mp3"
+			},
+			{
+				title:"Janji",
+				mp3:"./audio/CloudMusic/小雨/Janji - Shadows.mp3"
+			},
+			{
+				title:"Xeuphoria",
+				mp3:"./audio/CloudMusic/小雨/Xeuphoria - Blue.mp3"
+			},
+			{
+				title:"まらしぃ - 緑眠のジェラシー",
+				mp3:"./audio/CloudMusic/小雨/まらしぃ - 緑眠のジェラシー.mp3"
+			},
+			{
+				title:"Lemon",
+				mp3:"./audio/CloudMusic/小雨/米津玄師 - Lemon.mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+		case "Foggy":
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"DJ Vital Force",
+				mp3:"./audio/CloudMusic/雾/DJ Vital Force - I miss you.mp3"
+			},
+			{
+				title:"JIDA,Rachel Lim",
+				mp3:"./audio/CloudMusic/雾/JIDA,Rachel Lim - Autumn Breeze (Feat. Rachel Lim).mp3"
+			},
+			{
+				title:"Tobu,Itro",
+				mp3:"./audio/CloudMusic/雾/Tobu,Itro - Sunburst.mp3"
+			},
+			{
+				title:"Various Artists",
+				mp3:"./audio/CloudMusic/雾/Various Artists - Playerunknowns Battlegrounds Main Menu Theme.mp3"
+			},
+			{
+				title:"接个吻，开一枪",
+				mp3:"./audio/CloudMusic/雾/接个吻，开一枪 - YOUTH(Kissgun Remix).mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+		case "Overcast":
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"Gregg Lehrman",
+				mp3:"./audio/CloudMusic/阴/Gregg Lehrman - The Throw Down.mp3"
+			},
+			{
+				title:"HARDCORE TANO＊C",
+				mp3:"./audio/CloudMusic/阴/HARDCORE TANO＊C - All Is Fair In Law.mp3"
+			},
+			{
+				title:"Icon For Hire",
+				mp3:"./audio/CloudMusic/阴/Icon For Hire - Hope of Morning.mp3"
+			},
+			{
+				title:"Two Steps From Hell",
+				mp3:"./audio/CloudMusic/阴/Two Steps From Hell - Star Sky.mp3"
+			},
+			{
+				title:"Two Steps From Hell - Strength of a Thousand Men",
+				mp3:"./audio/CloudMusic/阴/Two Steps From Hell - Strength of a Thousand Men - Original.mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+		default:
+			new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+			}, [
+			{
+				title:"Gregg Lehrman",
+				mp3:"./audio/CloudMusic/阴/Gregg Lehrman - The Throw Down.mp3"
+			},
+			{
+				title:"HARDCORE TANO＊C",
+				mp3:"./audio/CloudMusic/阴/HARDCORE TANO＊C - All Is Fair In Law.mp3"
+			},
+			{
+				title:"Icon For Hire",
+				mp3:"./audio/CloudMusic/阴/Icon For Hire - Hope of Morning.mp3"
+			},
+			{
+				title:"Two Steps From Hell",
+				mp3:"./audio/CloudMusic/阴/Two Steps From Hell - Star Sky.mp3"
+			},
+			{
+				title:"Two Steps From Hell - Strength of a Thousand Men",
+				mp3:"./audio/CloudMusic/阴/Two Steps From Hell - Strength of a Thousand Men - Original.mp3"
+			},
+			], {
+				swfPath: "../../dist/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: true,
+				keyEnabled: true
+			});
+		break;
+	}
+});
+//]]>
+</script>
+</head>
+<body>
+<!-- main -->
+<div class="audio-main">
+	<h1>Weather Radio</h1>
+	<div class="audio-record-list w3layouts_audio">
+		<div class="w3_figure w3ls_fig">
+			<!--<button >Back</button>-->
+			<img src="images/back.gif" onclick="window.history.go(-1)" style="position: absolute; z-index: 99; opacity: 0.8; height: 25px; width: 25px;"/>
+			<img src="images/radio1.jpg" alt=" " class="img-responsive" />
+		</div>
+		<div id="jquery_jplayer_2" class="jp-jplayer w3l_play"></div>
+		<div id="jp_container_2" class="jp-audio agileits_audio" role="application" aria-label="media player">
+			<div class="jp-type-playlist agileinfo_playlist">
+				<div class="jp-gui jp-interface wthree_jp">
+					<div class="jp-controls w3_agileits_controls">
+						<button class="jp-previous" role="button" tabindex="0">previous</button>
+						<button class="jp-play" role="button" tabindex="0">play</button>
+						<button class="jp-next" role="button" tabindex="0">next</button>
+						<button class="jp-stop" role="button" tabindex="0">stop</button>
+					</div>
+					<div class="jp-progress agileits_w3layouts_progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-controls agile_volume">
+						<button class="jp-mute" role="button" tabindex="0">mute</button>
+						<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+					</div>
+					<div class="jp-time-holder w3_agile_holder">
+						<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+						<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+					</div>
+				</div>
+				<div class="jp-playlist w3layouts_either">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div class="jp-no-solution w3_no">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>			
+	</div>
+	<div class="footer">
+	</div>
+</div>
+
+
+<!-- //main -->
+<!-- script for play-list -->
+<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<!-- //script for play-list -->
+</body>
+</html>
